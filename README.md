@@ -1,3 +1,7 @@
+# Customer Accounts Microservice
+
+A RESTful microservice for managing customer accounts, built with Flask as part of the IBM DevOps and Software Engineering Capstone Project.
+
 # DevOps Capstone Template
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
