@@ -1,5 +1,7 @@
 # Customer Accounts Microservice
 
+![Build Status](https://github.com/PJ-s/devops-capstone-project/actions/workflows/ci-build.yaml/badge.svg)
+
 A RESTful microservice for managing customer accounts, built with Flask as part of the IBM DevOps and Software Engineering Capstone Project.
 
 # DevOps Capstone Template
