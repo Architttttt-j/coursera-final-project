@@ -16,7 +16,16 @@ app = Flask(__name__)
 app.config.from_object(config)
 
 # Set up security headers (Talisman) and CORS policies
-talisman = Talisman(app)
+talisman = Talisman(
+    app,
+    frame_options="SAMEORIGIN",
+    content_security_policy={
+        "default-src": "'self'",
+        "object-src": "'none'",
+    },
+    referrer_policy="strict-origin-when-cross-origin",
+    x_content_type_options=True,
+)
 CORS(app)
 
 # Import the routes After the Flask app is created

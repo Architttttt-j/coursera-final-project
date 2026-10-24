@@ -1,0 +1,21 @@
+CREATE account
+
+Command:
+curl.exe -sS -i -X POST http://127.0.0.1:8000/accounts -H "Content-Type: application/json" --data-raw '{"name":"Sprint Demo Account","email":"sprint.demo@example.com","address":"123 Main St","phone_number":"555-0100","date_joined":"2026-10-25"}'
+
+Output:
+HTTP/1.1 201 CREATED
+Server: Werkzeug/3.1.3 Python/3.11.0
+Date: Sat, 24 Oct 2026 18:43:56 GMT
+Content-Type: application/json
+Content-Length: 149
+Location: http://127.0.0.1:8000/accounts/1
+Access-Control-Allow-Origin: *
+Permissions-Policy: browsing-topics=()
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Content-Security-Policy: default-src 'self'; object-src 'none'
+Referrer-Policy: strict-origin-when-cross-origin
+Connection: close
+
+{"address":"123 Main St","date_joined":"2026-10-25","email":"sprint.demo@example.com","id":1,"name":"Sprint Demo Account","phone_number":"555-0100"}
